@@ -1,20 +1,15 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
     content: [
-        "./src/**/*.{html,js}",
-        "./node_modules/flowbite/**/*.js",
+      "./src/**/*.{html,js}",
+      "./node_modules/flowbite/**/*.js",
     ],
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
-        },
+      extend: {},
     },
     plugins: [
-        require('flowbite/plugin'),
-        require('@tailwindcss/aspect-ratio'),
+      require('flowbite/plugin'),
+      require('@tailwindcss/aspect-ratio'),
     ],
-};
+  }
